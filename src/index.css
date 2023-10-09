@@ -1,4 +1,5 @@
-@import '../node_modules/mini.css/dist/mini-default.min.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,9 +7,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  overflow-y: overlay;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+:root {
+  --primary: #0d6efd;
+  --black: #000;
+  --white: #ffffff;
+  --text-color: #333;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+form {
+  background-color: var(--white);
+}
+
+.nav-tabs .nav-link {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.nav-tabs .nav-link.active {
+  color: #0d6efd;
+}
+
+.filed-require {
+  color: red;
+}
+
+.checkmark {
+  display: inline-block;
+  margin-left: 6px;
+  width: 22px;
+  height: 22px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg); 
+  transform: rotate(45deg);
+  background: green;
+  border-radius: 50%;
+}
+
+.checkmark_stem {
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background-color: #fff;
+  left: 11px;
+  top: 3px;
+}
+
+.checkmark_kick {
+  position: absolute;
+  width: 9px;
+  height: 2.5px;
+  background-color: #fff;
+  left: 5px;
+  top: 13px;
 }

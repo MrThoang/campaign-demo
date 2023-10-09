@@ -1,0 +1,63 @@
+.campaign-submit {
+  display: flex;
+  justify-content: end;
+}
+
+.border-b {
+  border-bottom: 1px solid #000;
+}
+
+/* Child css */
+.campaign-wrapper input[type="checkbox"] {
+  font-size: 20px;
+}
+.campaign-child-container {
+  flex-wrap: nowrap;
+}
+
+.add-campaign {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+.add-campaign-plus {
+  position: absolute;
+  font-size: 34px;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+}
+
+.campaign-tab {
+  text-align: center;
+  font-size: 18px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.campaign-tab.active {
+  border: 2px solid var(--primary);
+}
+
+.campaign-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.campaign-check {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.campaign-check span {
+  margin-left: 8px;
+}
+
+.ads-group-btn {
+  display: flex;
+  justify-content: end;
+}
