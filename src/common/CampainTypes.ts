@@ -1,19 +1,22 @@
-export interface campaignType {
-    information: informationType[]
-    subCampaigns: subCampaignsType[]
+
+export type TCampaignType = {
+    information: TInformationType[]
+    subCampaigns: TSubCampaignsType[]
 }
-export interface informationType {
+export type TInformationType = {
     name: string
     describe?: string
 }
 
-export interface subCampaignsType {
+export type TSubCampaignsType = {
+    id: number,
     name: string
     status: boolean
-    ads: adsType[]
+    ads: TAdsType[]
 }
 
-export interface adsType {
+export type TAdsType = {
+    id: number
     name: string
     quantity: number
 }

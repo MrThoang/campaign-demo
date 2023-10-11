@@ -32,9 +32,11 @@
 
 .campaign-tab {
   text-align: center;
+  cursor: pointer;
   font-size: 18px;
   height: 120px;
   border-radius: 4px;
+  border: 2px solid transparent;
 }
 
 .campaign-tab.active {
