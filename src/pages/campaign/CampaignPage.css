@@ -8,9 +8,7 @@
 }
 
 /* Child css */
-.campaign-wrapper input[type="checkbox"] {
-  font-size: 20px;
-}
+
 .campaign-child-container {
   flex-wrap: nowrap;
 }
@@ -49,6 +47,21 @@
   justify-content: center;
 }
 
+.campaign-name div {
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dangerAds {
+  color: red;
+}
+
+.blackAds {
+  color: #000;
+}
+
 .campaign-check {
   display: flex;
   align-items: center;
@@ -63,3 +76,10 @@
   display: flex;
   justify-content: end;
 }
+
+
+input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+ 

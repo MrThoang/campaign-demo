@@ -4,19 +4,20 @@ export type TCampaignType = {
     subCampaigns: TSubCampaignsType[]
 }
 export type TInformationType = {
+    id: string
     name: string
     describe?: string
 }
 
 export type TSubCampaignsType = {
-    id: number,
+    id: string,
     name: string
-    status: boolean
+    status?: boolean
     ads: TAdsType[]
 }
 
 export type TAdsType = {
-    id: number
+    id: string
     name: string
     quantity: number
 }
